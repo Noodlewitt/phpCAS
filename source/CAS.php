@@ -40,6 +40,9 @@
 // hack by Vangelis Haniotakis to handle the absence of $_SERVER['REQUEST_URI']
 // in IIS
 //
+
+
+
 if (php_sapi_name() != 'cli') {
     if (!isset($_SERVER['REQUEST_URI'])) {
         $_SERVER['REQUEST_URI'] = $_SERVER['SCRIPT_NAME'] . '?' . $_SERVER['QUERY_STRING'];
@@ -63,7 +66,7 @@ if (!defined('E_USER_DEPRECATED')) {
 /**
  * phpCAS version. accessible for the user by phpCAS::getVersion().
  */
-define('PHPCAS_VERSION', '1.3.4+');
+define('PHPCAS_VERSION', '1.3.3+');
 
 /**
  * @addtogroup public
