@@ -1,13 +1,14 @@
 {
-    "name": "jasig/phpcas",
-    "description": "Provides a simple API for authenticating users against a CAS server",
+    "name": "noodlewitt/phpcas",
+    "description": "Provides a simple API for authenticating users against a CAS server (with fixed session behavior)",
     "keywords": ["cas", "jasig"],
     "homepage": "https://wiki.jasig.org/display/CASC/phpCAS",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
         {"name": "Joachim Fritschi", "homepage": "https://wiki.jasig.org/display/~fritschi"},
-        {"name": "Adam Franco", "homepage": "https://wiki.jasig.org/display/~adamfranco"}
+        {"name": "Adam Franco", "homepage": "https://wiki.jasig.org/display/~adamfranco"},
+        {"name": "Simon Davies", "homepage": "http://www.madeinkatana.com"}
     ],
     "require": {
         "php": ">=5.0.0",
