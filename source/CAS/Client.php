@@ -544,7 +544,9 @@ class CAS_Client
     {
         // the URL is build only when needed
         if ( empty($this->_server['logout_url']) ) {
-            $this->_server['logout_url'] = $this->_getServerBaseURL().'logout';
+            $this->_server['logout_url'] =  $this->_getServerBaseURL().'logout';
+            $this->_server['logout_url'] .= '&service=';
+            $this->_server['logout_url'] .= action('Auth\AuthController@getLogout');
         }
         return $this->_server['logout_url'];
     }
