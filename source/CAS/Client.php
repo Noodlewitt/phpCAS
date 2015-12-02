@@ -340,7 +340,8 @@ class CAS_Client
         // the URL is build only when needed
         if ( empty($this->_server['login_url']) ) {
             $this->_server['login_url'] = $this->_getServerBaseURL();
-            $this->_server['login_url'] .= 'login?cobrand=hottest100&service=';
+            $this->_server['login_url'] .= 'login?socialSignOn=false';
+            $this->_server['login_url'] .= '&cobrand=hottest100&service=';
             $this->_server['login_url'] .= action('Auth\AuthController@getAbc');
         }
         $url = $this->_server['login_url'];
